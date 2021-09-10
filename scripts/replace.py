@@ -6,8 +6,9 @@ Contact: apichardo2019@my.fit.edu
 
 from sys import argv # Used for command line arguments
 
-old_file = open(argv[1], "r")                # The original dictionary
-new_file = open("../dictionaries/" + argv[0][:-3] + ".dict", "w") # The new altered dictionary
+old_file = open(argv[1], "r")                               # The original dictionary
+new_file = open("../dictionaries/" +\
+		   argv[0][:-3] + argv[2] + argv[3] + ".dict", "w") # The new altered dictionary
 
 for every_line in old_file.readlines():
 	every_line = every_line.replace(argv[2], argv[3])
