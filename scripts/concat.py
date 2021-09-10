@@ -1,7 +1,7 @@
 """
-Author:  <team member name>
+Author:  <Michael Bardin>
 Date:    07SEP2021
-Contact: <email>
+Contact: <mbardin2018@my.fit.edu>
 """
 
 from sys import argv
