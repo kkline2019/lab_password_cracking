@@ -11,8 +11,9 @@ new_file = open("../dictionaries/" +\
 		   argv[0][:-3] + argv[2] + argv[3] + ".dict", "w") # The new altered dictionary
 
 for every_line in old_file.readlines():
-	every_line = every_line.replace(argv[2], argv[3])
-	new_file.write(every_line)
+	if argv[2] in every_line:
+		every_line = every_line.replace(argv[2], argv[3])
+		new_file.write(every_line)
 
 old_file.close()
 new_file.close()
