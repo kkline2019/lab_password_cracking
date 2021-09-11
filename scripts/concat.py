@@ -13,7 +13,7 @@ lines = old_file.readlines()
 
 for i in lines:
 	for j in lines:
-		new_file.write(i+j+'\n')
+		new_file.write(i.rstrip()+j.rstrip()+'\n')
 
 old_file.close()
 new_file.close()
