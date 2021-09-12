@@ -6,8 +6,13 @@ Contact: <email>
 
 from sys import argv
 
+if len(argv) == 3:
+    output_file = argv[2]
+else:
+    output_file = argv[0][:-3]
+
 old_file = open(argv[1], "r")
-new_file = open("../dictionaries/" + argv[0][:-3] + ".dict", "w")
+new_file = open("../dictionaries/" + output_file + ".dict", "w")
 
 lines = old_file.readlines()
 
