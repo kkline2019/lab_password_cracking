@@ -16,11 +16,14 @@ new_file = open("../dictionaries/" + output_file + ".dict", "w") # The new alter
 
 for every_line in old_file.readlines():
 	new_line = ""
+	new_line2 = ""
 	for every_char in range(len(every_line)):
 		if not every_char % 2:
 			new_line += every_line[every_char].upper()
+			new_line2 += every_line[every_char.lower()
 		else:
 			new_line += every_line[every_char].lower()
+			new_line2 += every_line[every_char.upper()
 	new_file.write(new_line)
 
 old_file.close()
